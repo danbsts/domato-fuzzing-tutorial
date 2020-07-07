@@ -6,7 +6,7 @@ SLEEP_TIME=$2
 
 while [ $INDEX -lt $TOTAL_FILES ]
 do
-  google-chrome $(ls | grep ".[-][0]*${INDEX}.html") &
+  google-chrome $(ls | grep ".[-][0]*${INDEX}".html) &
   echo $INDEX
   sleep ${SLEEP_TIME}
   kill -KILL $(pidof chrome)

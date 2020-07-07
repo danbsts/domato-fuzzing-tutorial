@@ -1,5 +1,5 @@
 NUMBER_FILES=$1
 SLEEP_TIME=$2
 
-./getFuzzers.sh $NUMBER_FILES
-./runTest.sh $NUMBER_FILES $SLEEP_TIME
+bash ./getFuzzers.sh $NUMBER_FILES
+bash ./runTest.sh $NUMBER_FILES $SLEEP_TIME
